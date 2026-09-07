@@ -1,0 +1,1105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.home {
+    min-height: 100vh;
+    width: 100%;
+    padding: 35px 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* =========================================
+   TOP NAVIGATION
+   ========================================= */
+
+.top-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.about-link {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 3px;
+    transition: 0.3s;
+}
+
+.about-link:hover {
+    color: white;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-label {
+    color: #8d6868;
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: clamp(60px, 8vw, 115px);
+    line-height: 0.9;
+    letter-spacing: -5px;
+    margin-bottom: 30px;
+}
+
+.education {
+    border-left: 1px solid #6e2929;
+    padding-left: 18px;
+    margin-bottom: 25px;
+}
+
+.education p:first-child {
+    color: #f5f5f5;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.education p:last-child {
+    color: #8d6868;
+    font-size: 15px;
+}
+
+.intro {
+    max-width: 520px;
+    color: #a98f8f;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   CYBER NETWORK
+   ========================================= */
+
+.cyber-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.network {
+    position: relative;
+    width: 480px;
+    height: 480px;
+}
+
+
+/* =========================================
+   NETWORK NODES
+   ========================================= */
+
+.node {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ffffff;
+
+    box-shadow:
+        0 0 8px rgba(255, 255, 255, 0.7);
+
+    z-index: 5;
+
+    animation: nodePulse 3.5s ease-in-out infinite;
+}
+
+
+/* Node Positions */
+
+.node-1 {
+    top: 7%;
+    left: 32%;
+    animation-delay: 0.3s;
+}
+
+.node-2 {
+    top: 17%;
+    right: 14%;
+    animation-delay: 1.2s;
+}
+
+.node-3 {
+    top: 42%;
+    right: 3%;
+    animation-delay: 2s;
+}
+
+.node-4 {
+    bottom: 14%;
+    right: 18%;
+    animation-delay: 0.8s;
+}
+
+.node-5 {
+    bottom: 4%;
+    left: 34%;
+    animation-delay: 1.7s;
+}
+
+.node-6 {
+    top: 58%;
+    left: 4%;
+    animation-delay: 2.4s;
+}
+
+.node-7 {
+    top: 28%;
+    left: 12%;
+    animation-delay: 1s;
+}
+
+.node-8 {
+    top: 72%;
+    left: 16%;
+    animation-delay: 2.8s;
+}
+
+
+/* =========================================
+   NETWORK CONNECTIONS
+   ========================================= */
+
+.connection {
+    position: absolute;
+    height: 1px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(122, 21, 21, 0.75),
+        rgba(168, 32, 32, 0.9),
+        rgba(122, 21, 21, 0.4),
+        transparent
+    );
+
+    transform-origin: left center;
+
+    z-index: 1;
+    opacity: 0.65;
+
+    animation: connectionPulse 4s ease-in-out infinite;
+}
+
+
+/* Connection Positions */
+
+.connection-1 {
+    width: 175px;
+    top: 50%;
+    left: 50%;
+    transform: rotate(-123deg);
+}
+
+.connection-2 {
+    width: 195px;
+    top: 50%;
+    left: 50%;
+    transform: rotate(-43deg);
+}
+
+.connection-3 {
+    width: 215px;
+    top: 50%;
+    left: 50%;
+    transform: rotate(-8deg);
+}
+
+.connection-4 {
+    width: 185px;
+    top: 50%;
+    left: 50%;
+    transform: rotate(48deg);
+}
+
+.connection-5 {
+    width: 215px;
+    top: 50%;
+    left: 50%;
+    transform: rotate(110deg);
+}
+
+.connection-6 {
+    width: 210px;
+    top: 50%;
+    left: 50%;
+    transform: rotate(164deg);
+}
+
+.connection-7 {
+    width: 140px;
+    top: 50%;
+    left: 50%;
+    transform: rotate(-154deg);
+}
+
+.connection-8 {
+    width: 155px;
+    top: 50%;
+    left: 50%;
+    transform: rotate(135deg);
+}
+
+
+/* =========================================
+   DATA PACKETS
+   ========================================= */
+
+.data-packet {
+    position: absolute;
+
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+
+    background: #a82020;
+
+    box-shadow:
+        0 0 8px #a82020,
+        0 0 16px rgba(168, 32, 32, 0.6);
+
+    z-index: 4;
+
+    opacity: 0;
+
+    animation: packetTravel 4s linear infinite;
+}
+
+.packet-1 {
+    offset-path: path("M 240 240 L 170 100");
+}
+
+.packet-2 {
+    offset-path: path("M 240 240 L 430 220");
+    animation-delay: 1s;
+}
+
+.packet-3 {
+    offset-path: path("M 240 240 L 330 420");
+    animation-delay: 2s;
+}
+
+.packet-4 {
+    offset-path: path("M 240 240 L 40 310");
+    animation-delay: 3s;
+}
+
+
+/* =========================================
+   CENTRAL SECURITY CORE
+   ========================================= */
+
+.central-node {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 100px;
+    height: 100px;
+
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid rgba(168, 32, 32, 0.85);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(168, 32, 32, 0.12),
+            rgba(122, 21, 21, 0.04),
+            transparent 70%
+        );
+
+    box-shadow:
+        0 0 30px rgba(122, 21, 21, 0.3),
+        inset 0 0 25px rgba(122, 21, 21, 0.1);
+
+    z-index: 3;
+
+    animation: corePulse 4s ease-in-out infinite;
+}
+
+
+/* =========================================
+   CORE CENTER
+   ========================================= */
+
+.core-center {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 8px #ffffff,
+        0 0 20px #a82020,
+        0 0 35px rgba(168, 32, 32, 0.8);
+
+    animation: centerPulse 2s ease-in-out infinite;
+}
+
+
+/* =========================================
+   CORE RINGS
+   ========================================= */
+
+.core-ring {
+    position: absolute;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(168, 32, 32, 0.4);
+
+    pointer-events: none;
+}
+
+.core-ring-1 {
+    width: 125px;
+    height: 125px;
+
+    animation: ringPulse 3s ease-out infinite;
+}
+
+.core-ring-2 {
+    width: 155px;
+    height: 155px;
+
+    border-color: rgba(168, 32, 32, 0.25);
+
+    animation: ringPulse 3s ease-out infinite 1s;
+}
+
+.core-ring-3 {
+    width: 190px;
+    height: 190px;
+
+    border-color: rgba(168, 32, 32, 0.12);
+
+    animation: ringPulse 3s ease-out infinite 2s;
+}
+
+
+/* =========================================
+   ANIMATIONS
+   ========================================= */
+
+@keyframes nodePulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.45;
+    }
+
+    50% {
+        transform: scale(1.8);
+        opacity: 1;
+    }
+}
+
+
+@keyframes connectionPulse {
+
+    0%,
+    100% {
+        opacity: 0.35;
+    }
+
+    50% {
+        opacity: 0.85;
+    }
+}
+
+
+@keyframes packetTravel {
+
+    0% {
+        offset-distance: 0%;
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        offset-distance: 100%;
+        opacity: 0;
+    }
+}
+
+
+@keyframes centerPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: scale(1.6);
+        opacity: 1;
+    }
+}
+
+
+@keyframes corePulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 25px rgba(122, 21, 21, 0.2),
+            inset 0 0 20px rgba(122, 21, 21, 0.08);
+    }
+
+    50% {
+        box-shadow:
+            0 0 50px rgba(122, 21, 21, 0.5),
+            inset 0 0 35px rgba(122, 21, 21, 0.15);
+    }
+}
+
+
+@keyframes ringPulse {
+
+    0% {
+        transform: scale(0.75);
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(1.25);
+        opacity: 0;
+    }
+}
+
+
+/* =========================================
+   BOTTOM NAVIGATION
+   ========================================= */
+
+.bottom-nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 30px;
+    border-top: 1px solid #2b1111;
+}
+
+.bottom-nav a {
+    color: #8d6868;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.bottom-nav a:hover {
+    color: white;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin: auto;
+    }
+
+    .education {
+        border-left: none;
+        border-top: 1px solid #6e2929;
+        padding-left: 0;
+        padding-top: 15px;
+    }
+
+    .cyber-animation {
+        display: none;
+    }
+
+    .bottom-nav {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .home {
+        padding: 25px 6%;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+        letter-spacing: -3px;
+    }
+
+    .bottom-nav {
+        justify-content: flex-start;
+    }
+}/* =========================================
+   INNER PAGES
+   ========================================= */
+
+.page {
+    min-height: 100vh;
+    padding: 35px 6%;
+    background: #080808;
+}
+
+
+/* Page Navigation */
+
+.page-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.page-nav a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 3px;
+    transition: 0.3s;
+}
+
+.page-nav a:hover {
+    color: #ffffff;
+}
+
+
+/* Page Header */
+
+.page-header {
+    max-width: 1200px;
+    margin: 0 auto 100px;
+}
+
+.page-header h1 {
+    font-size: clamp(55px, 8vw, 110px);
+    line-height: 0.9;
+    letter-spacing: -4px;
+}
+
+
+/* Content */
+
+.content-section {
+    max-width: 1200px;
+    margin: 0 auto 100px;
+}
+
+
+/* Section Title */
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #2b1111;
+    padding-bottom: 20px;
+    margin-bottom: 35px;
+}
+
+.section-title span {
+    color: #a82020;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-weight: normal;
+}
+
+
+/* Cards */
+
+.content-card {
+    border-left: 1px solid #6e2929;
+    padding: 25px 30px;
+    margin-bottom: 20px;
+    background: rgba(122, 21, 21, 0.03);
+    transition: 0.3s;
+}
+
+.content-card:hover {
+    background: rgba(122, 21, 21, 0.08);
+    border-left-color: #a82020;
+}
+
+.content-card h3 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.content-card p {
+    max-width: 750px;
+    color: #a98f8f;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .page {
+        padding: 25px 6%;
+    }
+
+    .page-nav {
+        margin-bottom: 70px;
+    }
+
+    .page-header {
+        margin-bottom: 70px;
+    }
+
+    .page-header h1 {
+        font-size: 55px;
+    }
+
+    .content-section {
+        margin-bottom: 70px;
+    }
+
+}/* =========================================
+   CERTIFICATIONS / NCL
+   ========================================= */
+
+.card-meta {
+    color: #8d6868 !important;
+    font-size: 13px !important;
+    margin-bottom: 15px;
+}
+
+.card-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #a82020;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.card-link:hover {
+    color: #ffffff;
+}
+
+
+/* NCL Results */
+
+.ncl-results {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    background: #2b1111;
+}
+
+.ncl-result {
+    background: #080808;
+    padding: 22px 18px;
+}
+
+.ncl-semester {
+    display: block;
+    color: #8d6868;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.ncl-result strong {
+    display: block;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.ncl-result small {
+    display: block;
+    color: #777;
+    font-size: 11px;
+    margin-top: 8px;
+}
+
+
+/* NCL Highlight */
+
+.ncl-highlight {
+    border-left: 2px solid #a82020;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+    background: rgba(122, 21, 21, 0.06);
+}
+
+.ncl-highlight span {
+    display: block;
+    color: #8d6868;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.ncl-highlight strong {
+    display: block;
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.ncl-highlight p {
+    color: #a98f8f;
+    font-size: 13px;
+}
+
+
+/* NCL Skills */
+
+.skills-line {
+    color: #777 !important;
+    font-size: 11px !important;
+    letter-spacing: 1px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    .ncl-results {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .ncl-results {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =========================================
+   HOMEPAGE ATMOSPHERE
+   ========================================= */
+
+.home {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle technical grid */
+
+.home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(168, 32, 32, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(168, 32, 32, 0.035) 1px, transparent 1px);
+    background-size: 70px 70px;
+    pointer-events: none;
+    mask-image: radial-gradient(circle at 70% 50%, black, transparent 65%);
+}
+
+/* Ambient red glow */
+
+.home::after {
+    content: "";
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: radial-gradient(
+        circle,
+        rgba(122, 21, 21, 0.10),
+        rgba(122, 21, 21, 0.035) 35%,
+        transparent 70%
+    );
+    filter: blur(20px);
+    pointer-events: none;
+}
+
+/* Keep content above atmosphere */
+
+.home > * {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================
+   HOMEPAGE ENTRANCE
+   ========================================= */
+
+.hero-content {
+    animation: heroReveal 1.2s ease-out both;
+}
+
+.cyber-animation {
+    animation: networkReveal 1.5s ease-out both;
+}
+
+.bottom-nav {
+    animation: navReveal 1.4s ease-out both;
+}
+
+@keyframes heroReveal {
+
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes networkReveal {
+
+    from {
+        opacity: 0;
+        transform: scale(0.88);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+@keyframes navReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* =========================================
+   ENHANCED NEXUS NETWORK
+   ========================================= */
+
+.cyber-animation {
+    position: relative;
+}
+
+.cyber-animation::before {
+    content: "";
+    position: absolute;
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        rgba(168, 32, 32, 0.08),
+        transparent 68%
+    );
+    animation: ambientPulse 6s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes ambientPulse {
+
+    0%, 100% {
+        transform: scale(0.92);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.08);
+        opacity: 1;
+    }
+
+}
+
+
+/* More active nodes */
+
+.node {
+    animation:
+        nodePulse 3.5s ease-in-out infinite,
+        nodeGlow 5s ease-in-out infinite;
+}
+
+@keyframes nodeGlow {
+
+    0%, 100% {
+        box-shadow:
+            0 0 5px rgba(255,255,255,0.4);
+    }
+
+    50% {
+        box-shadow:
+            0 0 10px rgba(255,255,255,0.8),
+            0 0 18px rgba(168,32,32,0.7);
+    }
+
+}
+
+
+/* Stronger central system */
+
+.central-node {
+    animation:
+        corePulse 4s ease-in-out infinite,
+        coreFloat 8s ease-in-out infinite;
+}
+
+@keyframes coreFloat {
+
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.04);
+    }
+
+}
+
+
+/* Moving red energy around the network */
+
+.network::after {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    top: 110px;
+    left: 110px;
+    border-radius: 50%;
+    border: 1px solid rgba(168,32,32,0.08);
+    animation: networkOrbit 12s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes networkOrbit {
+
+    from {
+        transform: rotate(0deg) scale(1);
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    to {
+        transform: rotate(360deg) scale(1.12);
+        opacity: 0.3;
+    }
+
+}
+
+.bottom-nav a {
+    position: relative;
+}
+
+.bottom-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 1px;
+    background: #a82020;
+    transition: width 0.3s ease;
+}
+
+.bottom-nav a:hover::after {
+    width: 100%;
+}
+
+.bottom-nav a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 12px rgba(168, 32, 32, 0.5);
+}
