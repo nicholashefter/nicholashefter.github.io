@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background: #080808;
+    background: #090909;
     color: #ffffff;
     font-family: Arial, sans-serif;
 }
@@ -67,7 +67,7 @@ body {
 }
 
 .hero-label {
-    color: #8d6868;
+    color: #C5A6AA;
     font-size: 11px;
     letter-spacing: 4px;
     margin-bottom: 25px;
@@ -81,7 +81,7 @@ body {
 }
 
 .education {
-    border-left: 1px solid #6e2929;
+    border-left: 1px solid #6B2630;
     padding-left: 18px;
     margin-bottom: 25px;
 }
@@ -93,13 +93,13 @@ body {
 }
 
 .education p:last-child {
-    color: #8d6868;
+    color: #C5A6AA;
     font-size: 15px;
 }
 
 .intro {
     max-width: 520px;
-    color: #a98f8f;
+    color: #D0B8BB;
     font-size: 17px;
     line-height: 1.7;
 }
@@ -205,9 +205,9 @@ body {
     background: linear-gradient(
         90deg,
         transparent,
-        rgba(122, 21, 21, 0.75),
-        rgba(168, 32, 32, 0.9),
-        rgba(122, 21, 21, 0.4),
+        rgba(214, 40, 57, 0.75),
+        rgba(255, 53, 77, 0.9),
+        rgba(214, 40, 57, 0.4),
         transparent
     );
 
@@ -291,11 +291,11 @@ body {
 
     border-radius: 50%;
 
-    background: #a82020;
+    background: #FF354D;
 
     box-shadow:
-        0 0 8px #a82020,
-        0 0 16px rgba(168, 32, 32, 0.6);
+        0 0 8px #FF354D,
+        0 0 16px rgba(255, 53, 77, 0.6);
 
     z-index: 4;
 
@@ -343,21 +343,21 @@ body {
     justify-content: center;
     align-items: center;
 
-    border: 1px solid rgba(168, 32, 32, 0.85);
+    border: 1px solid rgba(255, 53, 77, 0.85);
 
     border-radius: 50%;
 
     background:
         radial-gradient(
             circle,
-            rgba(168, 32, 32, 0.12),
-            rgba(122, 21, 21, 0.04),
+            rgba(255, 53, 77, 0.12),
+            rgba(214, 40, 57, 0.04),
             transparent 70%
         );
 
     box-shadow:
-        0 0 30px rgba(122, 21, 21, 0.3),
-        inset 0 0 25px rgba(122, 21, 21, 0.1);
+        0 0 30px rgba(214, 40, 57, 0.3),
+        inset 0 0 25px rgba(214, 40, 57, 0.1);
 
     z-index: 3;
 
@@ -379,8 +379,8 @@ body {
 
     box-shadow:
         0 0 8px #ffffff,
-        0 0 20px #a82020,
-        0 0 35px rgba(168, 32, 32, 0.8);
+        0 0 20px #D62839,
+        0 0 35px rgba(255, 53, 77, 0.8);
 
     animation: centerPulse 2s ease-in-out infinite;
 }
@@ -395,7 +395,7 @@ body {
 
     border-radius: 50%;
 
-    border: 1px solid rgba(168, 32, 32, 0.4);
+    border: 1px solid rgba(255, 53, 77, 0.4);
 
     pointer-events: none;
 }
@@ -411,7 +411,7 @@ body {
     width: 155px;
     height: 155px;
 
-    border-color: rgba(168, 32, 32, 0.25);
+    border-color: rgba(255, 53, 77, 0.25);
 
     animation: ringPulse 3s ease-out infinite 1s;
 }
@@ -420,7 +420,7 @@ body {
     width: 190px;
     height: 190px;
 
-    border-color: rgba(168, 32, 32, 0.12);
+    border-color: rgba(255, 53, 77, 0.12);
 
     animation: ringPulse 3s ease-out infinite 2s;
 }
@@ -500,14 +500,14 @@ body {
     0%,
     100% {
         box-shadow:
-            0 0 25px rgba(122, 21, 21, 0.2),
-            inset 0 0 20px rgba(122, 21, 21, 0.08);
+            0 0 25px rgba(214, 40, 57, 0.2),
+            inset 0 0 20px rgba(214, 40, 57, 0.08);
     }
 
     50% {
         box-shadow:
-            0 0 50px rgba(122, 21, 21, 0.5),
-            inset 0 0 35px rgba(122, 21, 21, 0.15);
+            0 0 50px rgba(214, 40, 57, 0.5),
+            inset 0 0 35px rgba(214, 40, 57, 0.15);
     }
 }
 
@@ -539,11 +539,11 @@ body {
     justify-content: center;
     gap: 50px;
     padding-top: 30px;
-    border-top: 1px solid #2b1111;
+    border-top: 1px solid #35151B;
 }
 
 .bottom-nav a {
-    color: #8d6868;
+    color: #C5A6AA;
     text-decoration: none;
     font-size: 11px;
     letter-spacing: 2px;
@@ -572,7 +572,7 @@ body {
 
     .education {
         border-left: none;
-        border-top: 1px solid #6e2929;
+        border-top: 1px solid #6B2630;
         padding-left: 0;
         padding-top: 15px;
     }
@@ -609,7 +609,7 @@ body {
 .page {
     min-height: 100vh;
     padding: 35px 6%;
-    background: #080808;
+    background: #090909;
 }
 
 
@@ -663,13 +663,13 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
-    border-bottom: 1px solid #2b1111;
+    border-bottom: 1px solid #35151B;
     padding-bottom: 20px;
     margin-bottom: 35px;
 }
 
 .section-title span {
-    color: #a82020;
+    color: #D62839;
     font-size: 12px;
     letter-spacing: 2px;
 }
@@ -684,16 +684,16 @@ body {
 /* Cards */
 
 .content-card {
-    border-left: 1px solid #6e2929;
+    border-left: 1px solid #6B2630;
     padding: 25px 30px;
     margin-bottom: 20px;
-    background: rgba(122, 21, 21, 0.03);
+    background: rgba(214, 40, 57, 0.03);
     transition: 0.3s;
 }
 
 .content-card:hover {
-    background: rgba(122, 21, 21, 0.08);
-    border-left-color: #a82020;
+    background: rgba(214, 40, 57, 0.08);
+    border-left-color: #D62839;
 }
 
 .content-card h3 {
@@ -704,7 +704,7 @@ body {
 
 .content-card p {
     max-width: 750px;
-    color: #a98f8f;
+    color: #D0B8BB;
     font-size: 15px;
     line-height: 1.7;
 }
@@ -739,7 +739,7 @@ body {
    ========================================= */
 
 .card-meta {
-    color: #8d6868 !important;
+    color: #C5A6AA !important;
     font-size: 13px !important;
     margin-bottom: 15px;
 }
@@ -747,7 +747,7 @@ body {
 .card-link {
     display: inline-block;
     margin-top: 20px;
-    color: #a82020;
+    color: #D62839;
     text-decoration: none;
     font-size: 11px;
     letter-spacing: 2px;
@@ -767,17 +767,17 @@ body {
     gap: 1px;
     margin-top: 35px;
     margin-bottom: 30px;
-    background: #2b1111;
+    background: #35151B;
 }
 
 .ncl-result {
-    background: #080808;
+    background: #090909;
     padding: 22px 18px;
 }
 
 .ncl-semester {
     display: block;
-    color: #8d6868;
+    color: #C5A6AA;
     font-size: 10px;
     letter-spacing: 2px;
     margin-bottom: 12px;
@@ -801,15 +801,15 @@ body {
 /* NCL Highlight */
 
 .ncl-highlight {
-    border-left: 2px solid #a82020;
+    border-left: 2px solid #D62839;
     padding: 20px 25px;
     margin-bottom: 30px;
-    background: rgba(122, 21, 21, 0.06);
+    background: rgba(214, 40, 57, 0.06);
 }
 
 .ncl-highlight span {
     display: block;
-    color: #8d6868;
+    color: #C5A6AA;
     font-size: 10px;
     letter-spacing: 3px;
     margin-bottom: 10px;
@@ -823,7 +823,7 @@ body {
 }
 
 .ncl-highlight p {
-    color: #a98f8f;
+    color: #D0B8BB;
     font-size: 13px;
 }
 
@@ -871,8 +871,8 @@ body {
     position: absolute;
     inset: 0;
     background-image:
-        linear-gradient(rgba(168, 32, 32, 0.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(168, 32, 32, 0.035) 1px, transparent 1px);
+        linear-gradient(rgba(255, 53, 77, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 53, 77, 0.035) 1px, transparent 1px);
     background-size: 70px 70px;
     pointer-events: none;
     mask-image: radial-gradient(circle at 70% 50%, black, transparent 65%);
@@ -890,8 +890,8 @@ body {
     transform: translateY(-50%);
     background: radial-gradient(
         circle,
-        rgba(122, 21, 21, 0.10),
-        rgba(122, 21, 21, 0.035) 35%,
+        rgba(214, 40, 57, 0.10),
+        rgba(214, 40, 57, 0.035) 35%,
         transparent 70%
     );
     filter: blur(20px);
@@ -980,7 +980,7 @@ body {
     border-radius: 50%;
     background: radial-gradient(
         circle,
-        rgba(168, 32, 32, 0.08),
+        rgba(255, 53, 77, 0.08),
         transparent 68%
     );
     animation: ambientPulse 6s ease-in-out infinite;
@@ -1020,7 +1020,7 @@ body {
     50% {
         box-shadow:
             0 0 10px rgba(255,255,255,0.8),
-            0 0 18px rgba(168,32,32,0.7);
+            0 0 18px rgba(255,53,77,0.7);
     }
 
 }
@@ -1057,7 +1057,7 @@ body {
     top: 110px;
     left: 110px;
     border-radius: 50%;
-    border: 1px solid rgba(168,32,32,0.08);
+    border: 1px solid rgba(255,53,77,0.08);
     animation: networkOrbit 12s linear infinite;
     pointer-events: none;
 }
@@ -1091,7 +1091,7 @@ body {
     bottom: -8px;
     width: 0;
     height: 1px;
-    background: #a82020;
+    background: #D62839;
     transition: width 0.3s ease;
 }
 
@@ -1101,5 +1101,5 @@ body {
 
 .bottom-nav a:hover {
     color: #ffffff;
-    text-shadow: 0 0 12px rgba(168, 32, 32, 0.5);
+    text-shadow: 0 0 12px rgba(255, 53, 77, 0.5);
 }
