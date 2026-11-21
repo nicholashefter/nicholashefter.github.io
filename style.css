@@ -34,6 +34,40 @@ body {
     align-items: center;
 }
 
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linkedin-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    color: #ffffff;
+    background: #D62839;
+    border: 1px solid #D62839;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.linkedin-mark {
+    font-family: Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+}
+
+.linkedin-link:hover {
+    background: #FF354D;
+    border-color: #FF354D;
+    transform: translateY(-2px);
+    box-shadow: 0 0 12px rgba(214, 40, 57, 0.45);
+}
+
 .about-link {
     color: #aaa;
     text-decoration: none;
