@@ -1131,16 +1131,52 @@ body {
     text-shadow: 0 0 12px rgba(255, 53, 77, 0.5);
 }
 
+/* ABOUT PAGE HERO */
+
+.about-hero {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    align-items: center;
+    gap: 45px;
+    margin-bottom: 60px;
+}
+
+.about-hero-text {
+    min-width: 0;
+}
+
+.about-hero .page-header {
+    margin-bottom: 30px;
+}
+
 .about-image {
     width: 100%;
-    max-width: 340px;
-    margin: 0 auto;
+    max-width: 300px;
+    justify-self: end;
 }
 
 .about-image img {
     display: block;
     width: 100%;
-    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
     border-radius: 8px;
     border: 1px solid #35151B;
+}
+
+/* MOBILE LAYOUT */
+
+@media (max-width: 700px) {
+
+    .about-hero {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-image {
+        max-width: 260px;
+        justify-self: center;
+        grid-row: 1;
+    }
+
 }
