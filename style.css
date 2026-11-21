@@ -1130,3 +1130,17 @@ body {
     color: #ffffff;
     text-shadow: 0 0 12px rgba(255, 53, 77, 0.5);
 }
+
+.about-image {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+}
+
+.about-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #35151B;
+}
